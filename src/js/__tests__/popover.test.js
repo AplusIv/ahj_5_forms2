@@ -11,7 +11,7 @@ test('button exists in DOM', () => {
   <div class="container">
     <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
   </div>
-  `
+  `,
   );
   const element = document.querySelector('button');
   expect(element.classList.contains('btn')).toEqual(true);
@@ -24,7 +24,7 @@ test('popover is shown', () => {
   <div class="container">
     <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
   </div>
-  `
+  `,
   );
   const element = document.querySelector('button');
   const popover = new Popover(element);
@@ -39,7 +39,7 @@ test('popover is hidden', () => {
   <div class="container">
     <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
   </div>
-  `
+  `,
   );
   const element = document.querySelector('button');
   const popover = new Popover(element);
